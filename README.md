@@ -27,3 +27,5 @@ ups-shutdown-for-andino` and install it in `/sbin`, and then copy
 enable ups-shutdown-for-andino` to enable to start on reboot, and `systemctl
 start ups-shutdown-for-andino` to start it immediately.
 
+Disclaimer: This is not an officially supported Google product.
+
