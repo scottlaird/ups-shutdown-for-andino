@@ -1,0 +1,13 @@
+[Unit]
+Description=Andino X1 UPS auto-shutdown
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/
+ExecStart=/sbin/ups-shutdown-for-andino
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
