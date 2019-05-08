@@ -1,3 +1,5 @@
+# ups-shutdown-for-andino
+
 ups-shutdown-for-andino is a utility for shutting down an [Andino
 X1](https://andino.systems/andino-x1/) when the [Andino
 UPS](https://andino.systems/andino-ups-uninterruptible-power-supply/) signals
@@ -21,11 +23,14 @@ drivers](https://github.com/andino-systems/Andino-X1/tree/master/doc/BaseBoard)
 inside of Raspian, so that you can talk to their Arduino on
 `/dev/ttyAMA0`.
 
-Once that is complete, compile `ups-shutdown-for-andino` via `go build
-ups-shutdown-for-andino` and install it in `/sbin`, and then copy
-`ups-shutdown-for-andino.service` to `/etc/systemd/system/`.  Run `systemctl
-enable ups-shutdown-for-andino` to enable to start on reboot, and `systemctl
+Once that is complete, compile `ups-shutdown-for-andino` by running
+`go build` and install it in `/sbin`.  For systems that use `systemd`
+(like Raspian and Ubuntu), copy `ups-shutdown-for-andino.service` to
+`/etc/systemd/system/`.  Run `systemctl enable
+ups-shutdown-for-andino` to enable to start on reboot, and `systemctl
 start ups-shutdown-for-andino` to start it immediately.
+
+### Disclaimer
 
 Disclaimer: This is not an officially supported Google product.
 
