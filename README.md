@@ -32,5 +32,5 @@ start ups-shutdown-for-andino` to start it immediately.
 
 ### Disclaimer
 
-Disclaimer: This is not an officially supported Google product.
+This is not an officially supported Google product.
 
